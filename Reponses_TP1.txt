@@ -1,0 +1,11 @@
+Q1. "npm init" génère un fichier "package.json". Ce fichier contient le nom du projet ainsi que toutes ses dépendances. Sa version et toute la description du projet.
+
+Q2. "./bin/www" est le fichier qui permet de lancer l'application. Il contient toute la configuration de l'application.
+
+Q3. Le fichier "./routes/index.js" permet d'afficher le contenu. Il utilise la méthode HTTP GET.
+
+Q4. Une route en Express est un URL qui permet d'acceder à une ressource.
+
+Q5. Le fichier Jade sert à générer du HTML.
+
+Q6. Un middleware dans Express est une fonction dans une route qui permet d'éxecuter du code pour une certaine ressource. Il peut être spécifique pour une certaine methode HTTP.
