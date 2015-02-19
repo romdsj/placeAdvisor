@@ -1,0 +1,9 @@
+block content
+	table
+		for val in reviews
+			tr
+				td #{val.name}
+				td #{val.placeType}
+				td
+					- for (var x = 0; x < val.stars; x++)
+						img(src= "http://png-4.findicons.com/files/icons/1692/32px_mania/32/misc_57.png")
