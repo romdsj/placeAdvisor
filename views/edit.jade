@@ -7,6 +7,6 @@ block content
 		input(type="text", id="stars", value=review.stars)
 		input(type="submit", onclick="event.preventDefault();editReview('#{review._id}')" value="Ok")
 		br
-		input(type="button", onclick="window.location.href = '../' + '#{review._id}'" value="Fermer")
+		input(type="button", onclick="window.location.href = '/' + '#{review._id}'" value="Fermer")
 	br
-	a(href="../../reviews") Toutes les reviews
+	a(href="/reviews") Toutes les reviews
