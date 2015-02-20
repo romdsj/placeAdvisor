@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	form(action="../reviews", method="POST")
+		input(type="text", name="name")
+		input(type="text", name="placeType")
+		input(type="text", name="stars")
+		input(type="submit", value="Ajouter")
+		br
+		input(type="button", onclick="window.location.href = '../reviews'" value="Fermer")

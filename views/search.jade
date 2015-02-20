@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 Recherche d'une review
+	form(action='.', method="GET")
+		select(value="name", id="type")
+			option(value="name") Nom
+			option(value="placeType") Type de réstaurant
+			option(value="stars") Nombre d'étoiles
+		input(type="text", id="val", placeholder="Recherchez")
+		input(type="submit", onclick="event.preventDefault();searchReview();")

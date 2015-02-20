@@ -1,9 +1,17 @@
+extends layout
+
 block content
 	table
 		for val in reviews
 			tr
+				td
+					a(href='./reviews/' + val._id)
+						img(src='http://www.fancyicons.com/free-icons/133/functional/png/24/right_arrow_24.png')
 				td #{val.name}
 				td #{val.placeType}
 				td
 					- for (var x = 0; x < val.stars; x++)
-						img(src= "http://png-4.findicons.com/files/icons/1692/32px_mania/32/misc_57.png")
+						img(src= "http://www.mricons.com/store/png/117441_34995_24_star_icon.png")
+				td
+					img(src="http://www.fancyicons.com/free-icons/122/flat/png/24/full_trash_24.png" onclick="deleteReview('#{val.id}')" style={cursor: 'pointer'})
+	a(href="./reviews/add") Ajouter une review

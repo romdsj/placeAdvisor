@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	a(href="../reviews/edit/" + review._id)
+		img(src="http://www.grossesse-tranquille.com/images_fr/editer.gif")
+	h1 #{review.name}
+	h3 #{review.placeType}
+	- for (var x = 0; x < review.stars; x++)
+		img(src= "http://www.mricons.com/store/png/117441_34995_24_star_icon.png")
+	br
+	a(href='../reviews') Toutes les reviews
