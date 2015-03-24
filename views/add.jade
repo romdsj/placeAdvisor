@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	form(action="/reviews", method="POST")
+		input(type="text", name="name", placeholder="Nom")
+		input(type="text", name="placeType", placeholder="Type de réstaurant")
+		input(type="text", name="stars", placeholder="Nombre d'étoiles")
+		input(type="submit", value="Ajouter")
+		br
+		input(type="button", onclick="window.location.href = '/reviews'" value="Fermer")

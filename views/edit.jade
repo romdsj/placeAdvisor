@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	form
+		input(type="text", id="name", value=review.name)
+		input(type="text", id="placeType", value=review.placeType)
+		input(type="text", id="stars", value=review.stars)
+		input(type="submit", onclick="event.preventDefault();editReview('#{review._id}')" value="Ok")
+		br
+		input(type="button", onclick="window.location.href = '/' + '#{review._id}'" value="Fermer")
+	br
+	a(href="/reviews") Toutes les reviews
